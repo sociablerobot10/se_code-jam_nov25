@@ -1,0 +1,15 @@
+.cards {
+  max-width: auto;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.cards__list {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  list-style: none;
+  margin-top: 300px;
+  padding: 0;
+  justify-content: center;
+}

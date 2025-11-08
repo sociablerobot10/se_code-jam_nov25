@@ -1,0 +1,19 @@
+.footer {
+  border-top: 1px solid #f57c00;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer__copyright {
+  color: #f57c00;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__names {
+  color: #f57c00;
+}

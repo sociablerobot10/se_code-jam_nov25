@@ -1,0 +1,23 @@
+.card {
+  position: relative;
+}
+
+.card__image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+.card__answers {
+  color: #f57c00;
+  margin: 0;
+}

@@ -1,0 +1,13 @@
+.submit {
+  margin-top: auto;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.submit__btn {
+  background-color: #f57c00;
+  border: none;
+  width: 100px;
+  height: 25px;
+}

@@ -1,0 +1,13 @@
+.page {
+  background-color: #1a1d1a;
+  min-height: 100vh;
+  padding-top: 1px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}

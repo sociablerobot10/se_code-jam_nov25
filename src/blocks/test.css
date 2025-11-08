@@ -1,0 +1,12 @@
+.test {
+  padding: 20px;
+}
+
+.test__question {
+  background-color: #f57c00;
+  color: #000000;
+  text-align: center;
+  padding: 10px 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
