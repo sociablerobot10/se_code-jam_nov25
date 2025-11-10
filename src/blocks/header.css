@@ -1,7 +1,9 @@
 .header {
   margin-top: 0;
+  margin-left: 1.5%;
 }
 
 .header__title {
   color: #f57c00;
+  font-family: "Cinzel", serif;
 }

@@ -10,8 +10,11 @@
   border: none;
   width: 100px;
   height: 25px;
+  font-family: "Marcellus", serif;
+  border-radius: 1.5px;
 }
 
 .submit__btn:hover {
   cursor: pointer;
+  color: white;
 }

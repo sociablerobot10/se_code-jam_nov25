@@ -9,6 +9,8 @@
   padding: 10px 20px;
   max-width: 600px;
   margin: 0 auto;
+  font-family: "Marcellus", serif;
+  border-radius: 1px;
 }
 
 .test__answer {

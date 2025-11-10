@@ -5,7 +5,8 @@ const quizzForm = document.querySelector(".test__form");
 const cardTemplate = document
   .querySelector(".test-answer-template")
   .content.querySelector(".card");
-
+const personalityResult = document.querySelector(".final-results__personality");
+const personalityResultImg = document.querySelector(".final-results__img");
 const data = [
   {
     question: "Do you have children?",
@@ -78,8 +79,9 @@ quizzForm.addEventListener("submit", (evt) => {
     questionElement.textContent = data[questionNumber].question;
     buttonElement.textContent = questionNumber === 3 ? "Submit" : "Next";
   } else {
-    console.log("Final total:", total);
-    alert(`Quiz complete! Your total score: ${total}`);
+    questionElement.textContent = "YOUR FINAL RESULTS";
+    personalityResult.style.display = "block";
+    personalityResultImg.style.display = "block";
   }
 });
 
