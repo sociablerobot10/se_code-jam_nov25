@@ -82,6 +82,7 @@ quizzForm.addEventListener("submit", (evt) => {
     questionElement.textContent = "YOUR FINAL RESULTS";
     personalityResult.style.display = "block";
     personalityResultImg.style.display = "block";
+    buttonElement.style.display = "none";
   }
 });
 
