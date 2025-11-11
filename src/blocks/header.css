@@ -7,3 +7,9 @@
   color: #f57c00;
   font-family: "Cinzel", serif;
 }
+
+@media (max-width: 480px) {
+  .header__title {
+    font-size: 1.45em;
+  }
+}

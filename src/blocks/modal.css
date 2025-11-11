@@ -48,3 +48,18 @@
   cursor: pointer;
   font-size: 25px;
 }
+@media (max-width: 480px) {
+  .modal__content {
+    width: 50%;
+    height: 50%;
+  }
+  .modal__title {
+    font-size: 25px;
+  }
+  .modal__text {
+    font-size: 15px;
+  }
+  .modal__start {
+    font-size: 10px;
+  }
+}
