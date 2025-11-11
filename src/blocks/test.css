@@ -34,3 +34,8 @@
   transition: all 0.2s ease;
   border-color: #f57c00;
 }
+@media (max-width: 717px) {
+  .test__question {
+    padding: 5px 10px;
+  }
+}

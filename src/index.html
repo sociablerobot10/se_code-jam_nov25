@@ -1,75 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personality test to determine what kind of spender you are today."
+    />
+    <link rel="icon" href="./images/favicoin.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./vendors/normalize.css" />
+    <link rel="stylesheet" href="./pages/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Marcellus&family=Unica+One&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Personality test to determine what kind of spender you are today." />
-  <link rel="icon" href="./images/favicoin.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="./vendors/normalize.css" />
-  <link rel="stylesheet" href="./pages/index.css" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Marcellus&family=Unica+One&display=swap"
-    rel="stylesheet" />
+    <title>Wallet Vibes</title>
+  </head>
 
-  <title>Wallet Vibes</title>
-</head>
-
-<body>
-  <div class="page">
-    <header class="header">
-      <h1 class="header__title">Wallet Vibes</h1>
-    </header>
-    <main class="content">
-      <form class="test__form">
-        <section class="test">
-          <h2 class="test__question">Do you have children?</h2>
-        </section>
-        <section class="cards">
-          <h3 class="final-results__personality">The Splurger</h3>
-          <img src="./images/empty-wallet.png" class="final-results__img" />
-          <template class="test-answer-template">
-            <li class="card">
-              <input type="radio" id="answer" class="test__answer" name="answers" required />
-              <label for="answer">
-                <img src="./images/dollarbill.jpg" alt="" class="card__image" />
-                <div class="card__content">
-                  <p class="card__answers"></p>
-                </div>
-              </label>
-            </li>
-          </template>
-          <ul class="cards__list"></ul>
-        </section>
-        <div class="submit">
-          <button class="submit__btn" type="submit">Next</button>
+  <body>
+    <div class="page">
+      <header class="header">
+        <h1 class="header__title">Wallet Vibes</h1>
+      </header>
+      <main class="content">
+        <form class="test__form">
+          <section class="test">
+            <h2 class="test__question">Do you have children?</h2>
+          </section>
+          <section class="cards">
+            <h3 class="final-results__personality">The Splurger</h3>
+            <img src="./images/empty-wallet.png" class="final-results__img" />
+            <template class="test-answer-template">
+              <li class="card">
+                <input
+                  type="radio"
+                  id="answer"
+                  class="test__answer"
+                  name="answers"
+                  required
+                />
+                <label for="answer">
+                  <img
+                    src="./images/dollarbill.jpg"
+                    alt=""
+                    class="card__image"
+                  />
+                  <div class="card__content">
+                    <p class="card__answers"></p>
+                  </div>
+                </label>
+              </li>
+            </template>
+            <ul class="cards__list"></ul>
+          </section>
+          <div class="submit">
+            <button class="submit__btn" type="submit">Next</button>
+          </div>
+        </form>
+      </main>
+      <footer class="footer">
+        <p class="footer__copyright">2025 &copy; Wallet Vibes Contributors</p>
+        <div class="footer__container">
+          <p class="footer__names">Michael Borges</p>
+          <p class="footer__names">Hamed Taeb</p>
+          <p class="footer__names">Lalla Blue</p>
+          <p class="footer__names">Christopher Rivera</p>
+          <p class="footer__names">Sofia Villazon</p>
         </div>
-      </form>
-    </main>
-    <footer class="footer">
-      <p class="footer__copyright">2025 &copy; Wallet Vibes Contributors</p>
-      <div class="footer__container">
-        <p class="footer__names">Michael Borges</p>
-        <p class="footer__names">Hamed Taeb</p>
-        <p class="footer__names">Lalla Blue</p>
-        <p class="footer__names">Christopher Rivera</p>
-        <p class="footer__names">Sofia Villazon</p>
-      </div>
-    </footer>
-  </div>
-  <div class="modal">
-    <div class="modal__backdrop"></div>
-    <div class="modal__content">
-      <h2 class="modal__title">
-        Spending Personality Test: Which one are you?!
-      </h2>
-      <p class="modal__text">
-        The Saver, The Splurger, The Planner, The Impulse Buyer
-      </p>
-      <button class="modal__start">Start Test</button>
+      </footer>
     </div>
-  </div>
-  <script type="module" src="./utils/script.js"></script>
-</body>
-
+    <div class="modal">
+      <div class="modal__backdrop"></div>
+      <div class="modal__content">
+        <h2 class="modal__title">
+          Spending Personality Test: Which one are you?
+        </h2>
+        <p class="modal__text">
+          The Saver, The Splurger, The Planner, The Impulse Buyer
+        </p>
+        <button class="modal__start">Start Test</button>
+      </div>
+    </div>
+    <script type="module" src="./utils/script.js"></script>
+  </body>
 </html>

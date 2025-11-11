@@ -31,3 +31,11 @@
   color: #f57c00;
   margin: 0;
 }
+@media (max-width: 480px) {
+  .card__content {
+    font-size: 0.6rem;
+  }
+  .card__answers {
+    font-size: 0.8rem;
+  }
+}
