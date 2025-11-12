@@ -13,6 +13,9 @@ const personalityResult = document.querySelector(".final-results__personality");
 const personalityResultImg = document.querySelector(".final-results__img");
 const modal = document.querySelector(".modal");
 const startBtn = modal.querySelector(".modal__start");
+const finalResultsDescription = document.querySelector(
+  ".final-results__description"
+);
 
 let totalPlannerScore = 0;
 let totalSaverScore = 0;
@@ -20,6 +23,10 @@ let totalImpulseScore = 0;
 let totalSplurgerScore = 0;
 let questionNumber = 0;
 const questionData = data["const_data"];
+const inpulseBuyerDescription = data["rules"]["Impulse Buyer"]["description"];
+const splurgerDescription = data["rules"]["Splurger"]["description"];
+const saverDescription = data["rules"]["Saver"]["description"];
+const plannerDescription = data["rules"]["Planner"]["description"];
 
 function getAnswers(number) {
   const answerArray = questionData[number].answer;
@@ -69,20 +76,6 @@ quizzForm.addEventListener("submit", (evt) => {
         totalImpulseScore,
         totalSplurgerScore,
       ];
-
-      console.log(
-        Math.max(
-          totalPlannerScore,
-          totalSaverScore,
-          totalImpulseScore,
-          totalSplurgerScore
-        )
-      );
-
-      console.log("Planner total:", totalPlannerScore);
-      console.log("Saver total:", totalSaverScore);
-      console.log("Impulse total:", totalImpulseScore);
-      console.log("Splurger total:", totalSplurgerScore);
     }
   }
 
@@ -101,8 +94,39 @@ quizzForm.addEventListener("submit", (evt) => {
   } else {
     questionElement.textContent = "YOUR FINAL RESULTS";
     personalityResult.style.display = "block";
-    personalityResultImg.style.display = "block";
+    let maxValue = Math.max(
+      totalPlannerScore,
+      totalSaverScore,
+      totalImpulseScore,
+      totalSplurgerScore
+    );
+    let finalResult;
     buttonElement.style.display = "none";
+    if (maxValue === totalPlannerScore) {
+      finalResult = "The Planner!";
+      personalityResult.textContent = finalResult;
+      personalityResultImg.style.display = "block";
+      finalResultsDescription.textContent = plannerDescription;
+      personalityResultImg.src = "./images/planner.png";
+    } else if (maxValue === totalSaverScore) {
+      finalResult = "The Saver";
+      personalityResult.textContent = finalResult;
+      personalityResultImg.style.display = "block";
+      personalityResultImg.src = "./images/saved-money.png";
+      finalResultsDescription.textContent = saverDescription;
+    } else if (maxValue === totalImpulseScore) {
+      finalResult = "Impulse Buyer";
+      personalityResult.textContent = finalResult;
+      personalityResultImg.style.display = "block";
+      personalityResultImg.src = "./images/empty-wallet.png";
+      finalResultsDescription.textContent = inpulseBuyerDescription;
+    } else {
+      finalResult = "The Splurger";
+      finalResultsDescription.textContent = splurgerDescription;
+      personalityResult.textContent = finalResult;
+      personalityResultImg.style.display = "block";
+      personalityResultImg.src = "./images/empty-wallet.png";
+    }
   }
 
   disableBtnElement(buttonElement, settings);
