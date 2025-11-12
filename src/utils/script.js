@@ -20,10 +20,6 @@ let totalImpulseScore = 0;
 let totalSplurgerScore = 0;
 let questionNumber = 0;
 const questionData = data["const_data"];
-console.log(questionData[5].question);
-console.log(questionData[5].answer);
-console.log(questionData[5].planner);
-console.log(questionData[5]);
 
 function getAnswers(number) {
   const answerArray = questionData[number].answer;
