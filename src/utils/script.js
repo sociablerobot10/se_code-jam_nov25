@@ -107,25 +107,25 @@ quizzForm.addEventListener("submit", (evt) => {
       personalityResult.textContent = finalResult;
       personalityResultImg.style.display = "block";
       finalResultsDescription.textContent = plannerDescription;
-      personalityResultImg.src = "./images/planner.png";
+      personalityResultImg.src = "./src/images/planner.png";
     } else if (maxValue === totalSaverScore) {
       finalResult = "The Saver";
       personalityResult.textContent = finalResult;
       personalityResultImg.style.display = "block";
-      personalityResultImg.src = "./images/saved-money.png";
+      personalityResultImg.src = "./src/images/saved-money.png";
       finalResultsDescription.textContent = saverDescription;
     } else if (maxValue === totalImpulseScore) {
       finalResult = "Impulse Buyer";
       personalityResult.textContent = finalResult;
       personalityResultImg.style.display = "block";
-      personalityResultImg.src = "./images/empty-wallet.png";
+      personalityResultImg.src = "./src/images/empty-wallet.png";
       finalResultsDescription.textContent = inpulseBuyerDescription;
     } else {
       finalResult = "The Splurger";
       finalResultsDescription.textContent = splurgerDescription;
       personalityResult.textContent = finalResult;
       personalityResultImg.style.display = "block";
-      personalityResultImg.src = "./images/empty-wallet.png";
+      personalityResultImg.src = "./src/images/empty-wallet.png";
     }
   }
 
