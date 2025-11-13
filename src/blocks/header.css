@@ -12,4 +12,7 @@
   .header__title {
     font-size: 1.45em;
   }
+  .header {
+    margin-left: 4.5%;
+  }
 }
