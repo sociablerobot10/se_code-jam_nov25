@@ -39,4 +39,6 @@ https://excalidraw.com/#room=7ba0c5558386120b0644,sIOAH5ndz10z5c0rOOjUaw
 
 ## Deployment
 
+https://mike-borges.github.io/se_code-jam_nov25/
+
 
