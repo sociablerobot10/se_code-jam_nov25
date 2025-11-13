@@ -35,13 +35,10 @@
 }
 
 @media (max-width: 717px) {
-  .card__answers {
-    font-size: 15px;
-  }
 }
 
 @media (max-width: 480px) {
   .card__answers {
-    font-size: 10px;
+    font-size: 15px;
   }
 }

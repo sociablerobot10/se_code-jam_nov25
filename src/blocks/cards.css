@@ -29,4 +29,18 @@
     flex-direction: column;
     justify-content: center;
   }
+  .cards__list {
+    grid-template-columns: none;
+  }
+}
+@media (max-width: 480px) {
+  .cards {
+    width: 85%;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
